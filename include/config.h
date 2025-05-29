@@ -6,7 +6,7 @@
 //--------------------------------------------------------------------------
 // PIN Configuration
 //--------------------------------------------------------------------------
-#define LED_PIN 18   //18 = D3 or 0     // Use direct pin number
+#define LED_PIN 18       // 18 = D3     // Use direct pin number
 #define SDA_PIN_ESP32 21 // Use direct pin number
 #define SCL_PIN_ESP32 22 // Use direct pin number
 
