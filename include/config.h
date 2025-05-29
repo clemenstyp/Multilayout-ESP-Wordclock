@@ -6,7 +6,7 @@
 //--------------------------------------------------------------------------
 // PIN Configuration
 //--------------------------------------------------------------------------
-#define LED_PIN 3        // Use direct pin number
+#define LED_PIN D3   //18 or 0     // Use direct pin number
 #define SDA_PIN_ESP32 21 // Use direct pin number
 #define SCL_PIN_ESP32 22 // Use direct pin number
 
@@ -186,7 +186,7 @@
  * Valid values for DEFAULT_HUE [integer 0-255]
  * Valid values for DEFAULT_BRIGHTNESS [one of these: 0, 20, 40, 60, 80, 100]
  */
-#define DEFAULT_LEDTYPE Brg
+#define DEFAULT_LEDTYPE Grb
 #define WHITE_LEDTYPE WhiteType::NeutralWhite
 #define DEFAULT_HUE 120
 #define DEFAULT_BRIGHTNESS 100
@@ -246,8 +246,8 @@
  * AUTOBRIGHT_LDR_RESDARK [number]
  * AUTOBRIGHT_LDR_RESDIVIDER [number]
  */
-#define AUTOBRIGHT_USE_BH1750 true
-#define AUTOBRIGHT_USE_LDR true
+#define AUTOBRIGHT_USE_BH1750 false
+#define AUTOBRIGHT_USE_LDR false
 
 #define AUTOBRIGHT_LDR_RESBRIGHT 15
 #define AUTOBRIGHT_LDR_RESDARK 1000
@@ -263,7 +263,7 @@
  *
  * Valid values [RTC_DS1307, RTC_PCF8523, RTC_DS3231]
  */
-#define RTC_Type RTC_DS3231
+#define RTC_Type RTC_DS1307
 
 //--------------------------------------------------------------------------
 // Serial Number
@@ -299,9 +299,9 @@
  * Valid values WIFI_PASSWORD [up to 64 Alphanumeric Letters]
  *
  */
-#define MANUAL_WIFI_SETTINGS false
-#define WIFI_SSID "WIFISSID"
-#define WIFI_PASSWORD "Password"
+#define MANUAL_WIFI_SETTINGS true
+#define WIFI_SSID "Rheinland IoT"
+#define WIFI_PASSWORD "s1vx6soN9fweoRWxzdm"
 
 //--------------------------------------------------------------------------
 // Captive portal settings
@@ -318,9 +318,9 @@
  * Valid values CP_PASSWORD [Alphanumeric Letters]
  *
  */
-#define CP_PROTECTED false
-#define CP_SSID "Connect_to_Wordclock"
-#define CP_PASSWORD "CHANGE_THIS_PASSWORD"
+#define CP_PROTECTED true
+#define CP_SSID "WordClock"
+#define CP_PASSWORD "47110815"
 
 //--------------------------------------------------------------------------
 // Settings for Boot sequence
